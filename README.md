@@ -1,4 +1,6 @@
-# CIS1702-W4-Sorting-Hat-Confidence
+# Confidence Challenge -- Starter Files
+
+Starter project for Page 11 (Final Challenge, Part 1: Comparison Operators).
 
 The boilerplate function and the test file have already been written for
 you. **You do not need to write or edit the test file.** Your job is only
@@ -11,7 +13,7 @@ eligibility challenge on Page 12. Keep the two in separate folders.
 ## Folder structure
 
 ```
-CIS1702-W4-Sorting-Hat-Confidence/
+confidence-challenge/
 ├── app/
 │   └── sorting_hat_confidence.py
 ├── test/
@@ -56,3 +58,17 @@ Or simply:
 ```
 pytest -v
 ```
+
+### Why the imports still work
+
+The test file still says `from sorting_hat_confidence import ...`, even
+though `sorting_hat_confidence.py` now lives in a different folder
+(`app/`) to the test file (`test/`). That works because of `pytest.ini`:
+it tells pytest to add `app/` to Python's import path before the tests
+run. You don't need to understand this file in detail, and you don't need
+to change it -- just keep it inside `confidence-challenge`, alongside
+`app` and `test`.
+
+Follow the instructions on Page 11 of the tutorial for the full Red,
+Green, Refactor workflow, including when to commit and push at each
+stage.
