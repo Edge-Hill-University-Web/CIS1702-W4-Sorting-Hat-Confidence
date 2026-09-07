@@ -1,7 +1,5 @@
-# Confidence Challenge -- Starter Files
-
-Starter project for Page 11 (Final Challenge, Part 1: Comparison Operators).
-
+# CIS1702 Week 4: Sorting Hat Condfidence
+ 
 The boilerplate function and the test file have already been written for
 you. **You do not need to write or edit the test file.** Your job is only
 to replace the `pass` statement inside the boilerplate function with real
@@ -13,7 +11,8 @@ eligibility challenge on Page 12. Keep the two in separate folders.
 ## Folder structure
 
 ```
-confidence-challenge/
+CIS1702-W4-Sorting-Hat-Confidence
+/
 ├── app/
 │   └── sorting_hat_confidence.py
 ├── test/
@@ -31,10 +30,10 @@ Application code lives in `app/`. Tests live in `test/`.
 
 ## Setup
 
-1. Copy this whole `confidence-challenge` folder into your
-   `hogwarts-sorting-hat` repository, as a top-level folder alongside your
-   existing `sorting_hat.py`.
-2. Install pytest if you haven't already:
+1. Fork this repository and then clone it (from your own github) folder into your
+   workspace.
+   
+3. Install pytest if you haven't already:
 
    ```
    cd confidence-challenge
@@ -59,16 +58,3 @@ Or simply:
 pytest -v
 ```
 
-### Why the imports still work
-
-The test file still says `from sorting_hat_confidence import ...`, even
-though `sorting_hat_confidence.py` now lives in a different folder
-(`app/`) to the test file (`test/`). That works because of `pytest.ini`:
-it tells pytest to add `app/` to Python's import path before the tests
-run. You don't need to understand this file in detail, and you don't need
-to change it -- just keep it inside `confidence-challenge`, alongside
-`app` and `test`.
-
-Follow the instructions on Page 11 of the tutorial for the full Red,
-Green, Refactor workflow, including when to commit and push at each
-stage.
